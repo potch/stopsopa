@@ -79,6 +79,7 @@
     header {
       width: 100%;
       border-top: 2px solid #666;
+      overflow: hidden;
     }
     header div {
       max-width: 920px;
@@ -89,6 +90,7 @@
       color: white;
       font-size: 18px;
       line-height: 1.4em;
+      text-align: center;
       font-family: Helvetica, Arial, sans-serif;
     }
     header a {
@@ -113,16 +115,34 @@
     section {
       clear: both;
       margin: 1em 0;
-      text-align: center;
     }
     ul {
       overflow: hidden;
       max-width: 960px;
-      margin: 0 auto;
+      margin: 40px auto;
+    }
+    footer {
+      font-size: 12px;
+      max-width: 700px;
+      margin: 50px auto 30px;
+    }
+    footer a {
+      color: white;
+      white-space: nowrap;
+    }
+    strong, b {
+      font-weight: bold;
+    }
+    p b {
+      color: #f24343;
+      text-shadow: 0 1px rgba(255,255,255,.2);
     }
     p {
       max-width: 800px;
-      margin: 1em auto;
+      margin: 40px auto 0;
+    }
+    p + p {
+      margin-top: 5px;
     }
     li {
       font-size: 14px;
@@ -136,13 +156,13 @@
       -webkit-box-sizing: border-box;
     }
     h1 {
-      margin: 30px 0;
+      margin-top: 30px;
       font-size: 64px;
       line-height: 1em;
       font-family: MetaBold, "Trebuchet MS", sans-serif;
     }
     h2 {
-      margin: 30px 0;
+      margin-top: 20px;
       font-size: 30px;
     }
     .fullwidth {
@@ -153,28 +173,29 @@
       margin-bottom: .5em;
     }
     a.button{
-       padding: 20px 30px;
-
-        background: -moz-linear-gradient(#F84B4E, #BC2B1A) repeat scroll 0 0 #BC2B1A;
-        color: #FFFFFF;
-        display: inline-block;
-        border: 0 none;
-        border-radius: 6px 6px 6px 6px;
-        box-shadow: 0 5px rgba(255, 255, 255, 0.1), 0 -4px rgba(0, 0, 0, 0.3) inset;
-        cursor: pointer;
-        font: 40px MetaBold, "Trebuchet MS",sans-serif;
-        text-decoration: none;
-        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+      margin-top: 10px;
+      padding: 20px 30px;
+      background: -moz-linear-gradient(#F84B4E, #BC2B1A) repeat scroll 0 0 #BC2B1A;
+      background: -webkit-gradient(linear, center top, center bottom, from(#F84B4E), to(#BC2B1A));
+      color: #FFFFFF;
+      display: inline-block;
+      border: 0 none;
+      border-radius: 6px 6px 6px 6px;
+      box-shadow: 0 5px rgba(255, 255, 255, 0.1), 0 -4px rgba(0, 0, 0, 0.3) inset;
+      cursor: pointer;
+      font: 40px MetaBold, "Trebuchet MS",sans-serif;
+      text-decoration: none;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     }
 
     a.button:hover {
-        box-shadow: 0 5px rgba(255, 255, 255, 0.1), 0 -4px rgba(0, 0, 0, 0.3) inset, 0 0 100px rgba(0, 0, 0, 0.3) inset;
+      box-shadow: 0 5px rgba(255, 255, 255, 0.1), 0 -4px rgba(0, 0, 0, 0.3) inset, 0 0 100px rgba(0, 0, 0, 0.3) inset;
     }
 
     a.button:active {
-        box-shadow: 0 -4px rgba(0, 0, 0, 0.3) inset, 0 0 100px rgba(0, 0, 0, 0.3) inset;
-        position: relative;
-        top: 5px;
+      box-shadow: 0 -4px rgba(0, 0, 0, 0.3) inset, 0 0 100px rgba(0, 0, 0, 0.3) inset;
+      position: relative;
+      top: 5px;
     }
   </style>
   <!--[if IE]>
@@ -218,6 +239,13 @@
     <a class="button" href="https://wfc2.wiredforchange.com/o/9042/p/dia/action/public/?action_KEY=8173">Take Action Now!</a>
   </section>
   <footer>
+    <strong>Learn More:</strong> 
+    <a href="http://vimeo.com/31100268">Watch the video</a> &middot;
+    <a href="http://americancensorship.org/">American Censorship page</a> &middot;
+    <a href="http://www.americancensorship.org/infographic.html">View the Infographic</a> &middot;
+    <a href="http://www.americancensorship.org/infographic.html">View the Infographic</a> &middot;
+    <a href="http://www.opencongress.org/bill/112-h3261/show">Read SOPA on OpenCongress</a> &middot;
+    <a href="http://www.opencongress.org/bill/112-s968/show">Read PIPA on OpenCongress</a>
   </footer>
 </body>
 </html>
