@@ -120,7 +120,7 @@
       clear: both;
       margin: 1em 0;
     }
-    ul {
+    #points ul {
       overflow: hidden;
       max-width: 1200px;
       margin: auto;
@@ -153,7 +153,7 @@
     p + p {
       margin-top: 20px;
     }
-    li {
+    #points li {
       font-size: 14px;
       line-height: 1.4em;
       width: 20%;
@@ -267,6 +267,39 @@
     abbr {
       border-bottom: 1px dotted #444444;
     }
+
+    .half {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         float: left;
+         padding: 0pt 1em;
+         text-align: left;
+         width: 50%;
+    }
+
+    .half li {
+         color: #AAAAAA;
+         list-style: disc inside none;
+         padding-left: 20px;
+         padding-top: 5px;
+    }
+
+    #outside {
+        display: none;
+        background-color: #333333;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        margin: 1em auto auto;
+        max-width: 1200px;
+        overflow: hidden;
+        padding: 1em 2em;
+    }
+
+    #outside h2 {
+         margin: 0pt;
+    }
   </style>
   <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -318,7 +351,27 @@
     <a class="button" href="https://blacklists.eff.org" id="button">Take Action Now!</a>
     <div><strong>Statements from Mozilla:</strong> <a href="http://blog.lizardwrangler.com/2012/01/17/pipasopa-and-why-you-should-care">Chairwoman Mitchell Baker</a>
          &middot; <a href="http://blog.mozilla.com/garykovacs/2012/01/mozilla-and-pipasopa/">CEO Gary Kovacs</a><br></div>
-    <div style="color: #777;">Outside the US? Get your friends in the US to take action today!</div>
+       <div style="color: #777;margin-top: 3em;"><a href="#" id="outside_us"><strong>Outside the US?</strong> Find out why you should care.</a></div>
+    <div id="outside">
+      <h2>Outside the US?</h2>
+      <div class="half">
+        <p>Internet laws in the United States affect the entire world:</p>
+        <ul>
+          <li>Many popular sites are based there</li>
+          <li>A poor US law could be used as a precedent for other countries which are considering similar laws</li>
+          <li>US laws can be 'exported' via trade agreements</li>
+        </ul>
+      </div>
+      <div class="half">
+        <p>As a citizen of the world, you can help by:</p>
+        <ul>
+          <li>Sending <a href="https://blacklists.eff.org"> this link</a> to any American friends you have</li>
+          <li>Signing the EFF&rsquo;s <a href="http://americancensorship.org/modal/state-dept-petition">petition to the U.S. State Department</a>, which is open to non-US citizens</li>
+          <li><a href="https://donate.mozilla.org/PIPA">Standing with Mozilla</a> by supporting our efforts</li>
+          <li>Joining a local digital rights organization (here is <a href="http://www.edri.org/about/members">a list</a> of such organizations in Europe)</li>
+        </ul>
+      </div>
+    </div>
   </section>
   <footer>
     <strong>Learn More:</strong>
@@ -351,5 +404,13 @@
   <noscript>
   <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//statse.webtrendslive.com/dcso6de4r0000082npfcmh4rf_4b1e/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
   </noscript>
+
+  <script>
+    var outside = document.getElementById('outside_us');
+    outside.onclick = function() {
+      document.getElementById('outside').style.display = 'block';
+      return false;
+    };
+  </script>
 </body>
 </html>
